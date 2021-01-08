@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-       <div class="header-top">
+       <div class="header__top">
                     <nav>
                         <ul>
                             <li><a href="">Shop</a></li>
@@ -55,48 +55,47 @@
                         </ul>
                     </div>
        </div>
-        <div class="header-content">
+        <div class="header__content">
             <button>Shop now</button>
         </div>
 
     </header>
    <section class="smoothies">
-       <div class="smoothies-top">
+       <div class="smoothies__top">
            <h2>What are these smoothies?</h2>
-           <p>
+           <p class="smoothies__top-text">
             A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made using other ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia, or syrup), whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or nutritional supplements. 
            </p>
        </div>
-       <div class="smoothies-features">
-           <div class="smoothies-features-plant">Plant Based
+       <div class="smoothies__features">
+           <div class="smoothies__features-plant">Plant Based
                <img src="" alt="plant">
-               
            </div>
-           <div class="smoothies-features-vegan">Vegan
+           <div class="smoothies__features-vegan">Vegan
             <img src="" alt="vegan">
            </div>
-           <div class="smoothies-features-paleo">Paleo
+           <div class="smoothies__features-paleo">Paleo
             <img src="" alt="paleo">
            </div>
-           <div class="smoothies-features-gluten">Gluten-Free
+           <div class="smoothies__features-gluten">Gluten-Free
             <img src="" alt="gluten">
            </div>
-           <div class="smoothies-features-corn">Corn-Free
+           <div class="smoothies__features-corn">Corn-Free
             <img src="" alt="corn">
            </div>
-           <div class="smoothies-features-soy">Soy-Free
+           <div class="smoothies__features-soy">Soy-Free
             <img src="" alt="soy">
            </div>
-           <div class="smoothies-features-ayurvedic">Ayurvedic
+           <div class="smoothies__features-ayurvedic">Ayurvedic
             <img src="" alt="ayurvedic">
            </div>
-           <div class="smoothies-features-love">Made With Love
+           <div class="smoothies__features-love">Made With Love
             <img src="" alt="love">
            </div>
        </div>
    </section>
    <section class="about">
-       <div class="about-image">
+       <div class="about__image">
            <img src="" alt="">
        </div>
        <h2>What makes Smoothie an awesome drink? </h2>
@@ -110,52 +109,95 @@
            <li><img src="" alt="">Gluten-Free & Grain-Free</li>
            <li><img src="" alt="">Corn-Free & Soy-Free</li>
        </ul>
-       <div class="about-organic">
+       <div class="about__organic">
            <button>About Organic Smoothie</button>
        </div>
    </section>
-   <section class="products">
-       
+   <section class="products__item">
+       <div class="products__item--dark-chocolate">
+           <img src="" alt="">
+           <h3>Dark Chocolate Smoothie <span>100 ml</span></h3>
+           <button>Buy</button>
+       </div>
+       <div class="products__item--vegan-lettuce"><h3>Vegan Lettuce Smoothie <span>100 ml</span></h3>
+           <img src="" alt="">
+           <button>Buy</button>
+       </div>
+       <div class="products__item--lemon-ginger"><h3>Lemon Ginger Smoothie <span>100 ml</span></h3>
+           <img src="" alt="">
+           <button>Buy</button>
+       </div>
+       <div class="products__item--tumeric-garlic"><h3>Turmeric Garlic Smoothie <span>100 ml</span></h3>
+           <img src="" alt="">
+           <button>Buy</button>
+       </div>
    </section>
-   <section class="story"><h2>1</h2></section>
-   <section class="testimonials"><h2>1</h2></section>
-   <section class="blog"><h2>1</h2></section>
+   <section class="story">
+       <div class="story__about">
+        <h3>Our story</h3>
+        <p class="story__about-text">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.</p>
+        <button>Who we are</button>
+       </div>
+       <div class="story__image">
+           <img class="story__image-stamp" src="" alt=""> 
+           <img class="story__image-main"src="" alt="">
+       </div>
+   </section>
+   <section class="testimonials">
+       <div class="testimonials__top">
+           <h3>Why clients LOVE us?</h3> 
+           <img class="testimonials__top-dots" src="" alt="dots"> <!--до конца не понял как эти точки делать, поставил img-->
+       </div>
+       <div class="testimonials__main"></div>
+   </section>
+   <section class="blog">
+       <div class="blog__image">
+           <h3>Our blog</h3>
+           <img src="" alt="">
+       </div>
+       <div class="blog__about">
+         <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
+         <p class="blog__about-date">Jun 16, 2020
+         <p class="blog__about-main">If the fruit ingredients and the green vegetable ingredients are both juiced ahead of time, the mixed juice doesn't even have to be blended like a smoothie, i.e. a green juice or anything...</p>
+         <a href="#"> ... Read More</a>
+       </div>
+   </section>
    <section class="instagram">
-       <div class="instagram-main">
+       <div class="instagram__main">
            <a href=""><img src="" alt="icon"></a>
            <h3>ashasuperfoods</h3>
        </div>
-       <div class="instagram-gallery">
-           <div class="instagram-image_01">
+       <div class="instagram__gallery">
+           <div class="instagram__gallery--first-image"> <!--Вопрос по названию классов. Можно ли использовать тут цирфы? Пример: <div class="instagram__gallery-image01?-->
                <a href=""></a><img src="" alt="image01">
                <img src="" alt="icon">
            </div>
-           <div class="instagram-image_02">
+           <div class="instagram__gallery--second-image">
             <a href=""></a><img src="" alt="image02">
             <img src="" alt="icon">
            </div>
-           <div class="instagram-image_03">
+           <div class="instagram__gallery--third-image">
             <a href=""></a><img src="" alt="image03">
             <img src="" alt="icon">
            </div>
-           <div class="instagram-image_04">
+           <div class="instagram__gallery--fourth-image">
             <a href=""></a><img src="" alt="image04">
             <img src="" alt="icon">
            </div>
-           <div class="instagram-image_05">
+           <div class="instagram__gallery--fifth-image">
             <a href=""></a><img src="" alt="image05">
             <img src="" alt="icon">
            </div>
        </div>
    </section>
    <footer class="footer">
-       <div class="footer-top">
-           <div class="footer-top-logo">
-               <a href=""">
+       <div class="footer__top">
+           <div class="footer__top-logo">
+               <a href="">
                    <img src="" alt="logo">
                </a>
            </div>
-           <div class="footer-top-info">
+           <div class="footer__top-info">
                <h3>Information</h3>
                <ul>
                    <li>Search</li>
@@ -164,7 +206,7 @@
                    <li>Privacy Policy</li>
                </ul>
            </div>
-           <div class="footer-top-payments">
+           <div class="footer__top-payments">
             <h3>Payments</h3>
             <ul>
                 <li><a href=""><img src="" alt="AMEX"></a></li>
@@ -178,20 +220,20 @@
                 <li><a href=""><img src="" alt="Visa"></a></li>
             </ul>
            </div>
-           <div class="footer-top-subscribe">
+           <div class="footer__top-subscribe">
                <h3>Don’t miss out!</h3>
-               <a href=""><img src="" alt="icon">Subscribe to our newsletter</a>
+               <input type="email" name="email" placeholder="Subscribe to our newsletter"input> <!--тут надо input, но не понимаю как это сделать с картинкой и текстом-->
            </div>
-           <div class="footer-top-follow_us">
+           <div class="footer__top--follow-us">
                <h3>Follow Us</h3>
                <a href=""><img src="" alt="Facebook"></a>
                <a href=""><img src="" alt="Pinterest"></a>
                <a href=""><img src="" alt="Instagram"></a>
            </div>
        </div>
-       <div class="footer-copyright">
-           <div class="footer-copyright-year">© 2020. All Rights Reserved.</div>
-           <div class="footer-copyright-go_top">Go top</div>
+       <div class="footer__copyright">
+           <div class="footer__copyright-year">© 2020. All Rights Reserved.</div>
+           <div class="footer__copyright-top">Go top</div>
        </div>
     </footer>    
 </body>
