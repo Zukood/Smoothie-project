@@ -1,8 +1,9 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
-    font-family: MuliRegular; 
-    src: url(./assets/fonts/Muli-Regular.woff); 
+    font-family: MuliRegular;
+    src: url(./assets/fonts/Muli-Regular.woff);
 }
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
 
@@ -10,6 +11,7 @@
 /* Общие стили */
 html,
 body {
+    background-color: aqua;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,8 +51,3 @@ a {
 
 
 /* Здесь будут медиа запросы */
-
-
-
-
-
