@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="header__content">
-            <button class="header__btn btn btn--grenn-bg">Shop now
+            <button class="header__btn btn btn--green-bg">Shop now
                 <img class="btn__arrow-yellow" src="" alt="">
             </button>
         </div>
@@ -100,7 +100,6 @@
             supplements.
         </p>
         <div class="smoothies__features features">
-            <!-- поменять последовательность картинка, потом спан-->
             <div class="features__content">
                 <img class="features__icon" src="" alt="">
                 <span class="features__text">Plant Based</span>
@@ -140,7 +139,7 @@
         <div class="about__content-title">
             <h2 about="about__text title">What makes Smoothie an <span class="about__text-green">awesome drink?</span>
             </h2>
-            <img class="abot__image-line" src="" alt="">
+            <img class="aboгt__image-line" src="" alt="">
         </div>
         <div class="about__smoothie smoothie">
             <ul class="smoothie__list">
@@ -177,16 +176,20 @@
             </ul>
         </div>
         <div class="about__content">
-            <button class="about__btn btn btn--transparend">About Organic Smoothie</button>
+            <button class="about__btn btn btn--transparend"><span class="smoothie__text">About Organic
+                    Smoothie</span></button>
             <img class="btn__arrow-yellow" src="" alt="">
         </div>
     </section>
-    <section class="products">
-        <div class="products__item products__item--dark-chocolate">
-            <img src="" alt="">
-            <h3>Dark Chocolate Smoothie <span>100 ml</span></h3>
-            <button>Buy</button>
+    <section class="product">
+        <div class="product__item product__item--dark-chocolate">
+            <img class="product__img " src="" alt="">
+            <h3 class="product__subtitle">Dark Chocolate Smoothie <span class="product__ml">100 ml</span></h3>
+            <!--по шрифту h3 не понял все все таки, он такой же как на smoothie__text?-->
+            <button class="product__btn btn btn--tr-white">Buy</button>
+            <img class="btn__arrow-white" src="" alt="">
         </div>
+        <!-- не делал дальше этот блок, хочу проверить правильно ли сдела первую часть?
         <div class="products__item products__item--vegan-lettuce">
             <h3>Vegan Lettuce Smoothie <span>100 ml</span></h3>
             <img src="" alt="">
@@ -201,77 +204,90 @@
             <img src="" alt="">
             <h3>Turmeric Garlic Smoothie</h3>
             <span>100 ml</span>
-            <button>Buy</button>
+            <button>Buy</button> -->
         </div>
     </section>
     <section class="story">
         <div class="story__about">
-            <h3>Our story</h3>
-            <p class="story__about-text">As products typically using raw fruits or vegetables, smoothies include dietary
-                fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar
+            <h2 class="story__about title">Our story</h2>
+            <p class="story__about-text text">As products typically using raw fruits or vegetables, smoothies include
+                dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency
+                similar
                 to a milkshake.</p>
-            <button>Who we are</button>
         </div>
-        <img class="story__image-main" src="" alt="">
+        <div class="story__content">
+            <button class="story__btn btn btn--green-bg">Who we are
+                <img class="btn__arrow-yellow" src="" alt="">
+            </button>
+        </div>
+        <img class="story__image" src="" alt="">
     </section>
     <section class="testimonials">
-        <h3>Why clients LOVE us?</h3>
+        <h3 class="testimonials__title title">Why clients LOVE us?</h3>
         <div class="testimonials__main">
-            <q class="testimonials__main-text">”Smoothie is great. I don't know what else to say. I will let my mum know
+            <q class="testimonials__text text">”Smoothie is great. I don't know what else to say. I will let my mum know
                 about this, she could really make use of Smoothie! Smoothie saved my business.”</q>
-            <cite class="testimonials__main-author">- from Santa Monica, CA</cite>
+            <cite class="testimonials__from">- from Santa Monica, CA</cite>
         </div>
         <div class="testimonials__arrows">
-            <button class="testimonials__arrow-left"> <img class="" src="" alt=""></button>
-            <button class="testimonials__arrow-right"> <img class="" src="" alt=""></button>
+            <button class="testimonials__btn btn">
+                <img class="btn__arrow-left" src="" alt=""></button>
+            <button class="testimonials__btn btn">
+                <img class="btn__arrow-yellow" src="" alt=""></button>
         </div>
     </section>
     <section class="blog">
-        <h3>Our blog</h3>
+        <h2 class="blog__about title">Our blog</h2>
         <div>
-            <img src="" alt="">
+            <img class="blog__img" src="" alt="">
             <div class="blog__about">
-                <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
-                <time datetime="">Jun 16, 2020</time>
-                <p class="blog__about-main">If the fruit ingredients and the green vegetable ingredients are both
+                <h3 class="blog__subtitle">ASAFOETIDA - THE NEXT TURMERIC?</h3>
+                <time class="blog__date" datetime="">Jun 16, 2020</time>
+                <p class="blog__text text">If the fruit ingredients and the green vegetable ingredients are both
                     juiced ahead of time, the mixed juice doesn't even have to be blended like a smoothie, i.e. a
                     green juice or anything...</p>
-                <a href="#"> ... Read More<img src="" alt="">s</a>
+                <a class="block__link" href="#"> ... Read More
+                    <img class="block__arrow-img" src="" alt=""></a>
             </div>
         </div>
 
     </section>
     <section class="instagram">
         <div class="instagram__main">
-            <a href=""><img src="" alt="icon">ashasuperfoods</a>
+            <a class="instagram__link" href="">
+                <img class="instagram__link-image" src="" alt="">ashasuperfoods</a>
         </div>
-        <div class="instagram__gallery">
-            <div class="instagram__gallery-image">
-                <a href=""></a><img src="" alt="image01">
-                <img src="" alt="icon">
+        <div class="instagram__gallery gallery">
+            <div class="gallery__image">
+                <a class="gallery__link" href=""></a>
+                <img class="gallery__pic" src="" alt="">
+                <img class="gallery__icon" src="" alt="">
             </div>
-            <div class="instagram__gallery-image">
-                <a href=""></a><img src="" alt="image02">
-                <img src="" alt="icon">
+            <div class="gallery__image">
+                <a class="gallery__link" href=""></a>
+                <img class="gallery__pic" src="" alt="">
+                <img class="gallery__icon" src="" alt="">
             </div>
-            <div class="instagram__gallery-image">
-                <a href=""></a><img src="" alt="image03">
-                <img src="" alt="icon">
+            <div class="gallery__image">
+                <a class="gallery__link" href=""></a>
+                <img class="gallery__pic" src="" alt="">
+                <img class="gallery__icon" src="" alt="">
             </div>
-            <div class="instagram__gallery-image">
-                <a href=""></a>
-                <img src="" alt="image04">
-                <img src="" alt="icon">
+            <div class="gallery__image">
+                <a class="gallery__link" href=""></a>
+                <img class="gallery__pic" src="" alt="">
+                <img class="gallery__icon" src="" alt="">
             </div>
-            <div class="instagram__gallery-image">
-                <a href=""></a><img src="" alt="image05">
-                <img src="" alt="icon">
+            <div class="gallery__image">
+                <a class="gallery__link" href=""></a>
+                <img class="gallery__pic" src="" alt="">
+                <img class="gallery__icon" src="" alt="">
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer__top">
-            <div class="logo">
+            <div class="footer__logo logo">
                 <a class="logo__link" href="">
                     <img class="logo__image" src="" alt="">
                 </a>
