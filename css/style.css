@@ -1,7 +1,7 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
     font-family: MuliRegular;
-    src: url(./assets/fonts/Muli-Regular.woff);
+    src: url(/assets/fonts/Muli-Regular.woff);
 }
 
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
@@ -23,7 +23,15 @@ a {
 
 
 /* Header */
+.header {
+    background-image: url('../assets/img/header-bg-img.jpg');
+    background-size: cover;
+    /* Style for "header-bg-" */
+    width: 100%;
+    height: 100vh;
+}
 
+.menu__list {}
 
 /* Smoothies */
 
