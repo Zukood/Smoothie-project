@@ -45,35 +45,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid;
     padding: 70px 100px;
 }
 
-.menu {
-    border: 1px solid;
-    width: 540px;
-    height: 11px;
-    font-family: MuliRegular;
-}
 
-.menu__list {
-    /* Style for "Home" */
-
-    font-family: MuliRegular;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-size: 11px;
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 0.32px;
-}
-
-.menu__list-link {
-    color: #ffffff;
-}
 
 .header__personal {
-    border: 1px solid;
+
     width: 170px;
     height: 35px;
 
@@ -85,9 +63,15 @@ a {
     justify-content: space-between;
 }
 
+.header__personal-count {
+    color: black;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: #ffffff;
+
+}
 
 .header__social {
-    border: 1px solid;
     width: 160px;
     height: 35px;
 
@@ -99,20 +83,42 @@ a {
     justify-content: space-between;
 }
 
+.menu {
+    width: 540px;
+    height: 11px;
+    font-family: MuliRegular;
+}
+
+.menu__list {
+
+    font-family: MuliRegular;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.32px;
+}
+
+.menu__list-link {
+    color: #ffffff;
+}
+
 .header__content {
-    border: 1px solid;
+    display: flex;
+    justify-content: center;
 }
 
-.header__personal-icon {}
+.btn {
+    width: 280px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #0aa566;
+    border: 0;
+    font-family: "Muli-Extra Bold";
+    font-size: 24px;
+    color: #ffffff;
 
-
-
-.header__logo {
-    border: 1px solid;
-}
-
-.logo {
-    /* Style for "Logo" */
 }
 
 /* Smoothies */
