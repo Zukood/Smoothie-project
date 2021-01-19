@@ -4,13 +4,23 @@
     src: url(/assets/fonts/Muli-Regular.woff);
 }
 
+@font-face {
+    font-family: MuliRegular;
+    src: url(../assets/fonts/Muli-ExtraBold.woff);
+}
+
+@font-face {
+    font-family: MuliRegular;
+    src: url(..//assets/fonts/Muli-Bold.woff);
+}
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
 
 
 /* Общие стили */
 html,
-body {
+* {
 
     margin: 0;
     padding: 0;
@@ -26,12 +36,84 @@ a {
 .header {
     background-image: url('../assets/img/header-bg-img.jpg');
     background-size: cover;
-    /* Style for "header-bg-" */
     width: 100%;
     height: 100vh;
+
 }
 
-.menu__list {}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 70px 100px;
+}
+
+.menu {
+    border: 1px solid;
+    width: 540px;
+    height: 11px;
+    font-family: MuliRegular;
+}
+
+.menu__list {
+    /* Style for "Home" */
+
+    font-family: MuliRegular;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.32px;
+}
+
+.menu__list-link {
+    color: #ffffff;
+}
+
+.header__personal {
+    border: 1px solid;
+    width: 170px;
+    height: 35px;
+
+}
+
+.header__personal-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__social {
+    border: 1px solid;
+    width: 160px;
+    height: 35px;
+
+}
+
+.header__social-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content {
+    border: 1px solid;
+}
+
+.header__personal-icon {}
+
+
+
+.header__logo {
+    border: 1px solid;
+}
+
+.logo {
+    /* Style for "Logo" */
+}
 
 /* Smoothies */
 
