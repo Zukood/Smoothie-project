@@ -1,18 +1,20 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
-    font-family: MuliRegular;
-    src: url(/assets/fonts/Muli-Regular.woff);
+    font-family: 'Muli-Regular';
+    src: url(../assets/fonts/Muli-Regular.woff);
 }
 
 @font-face {
-    font-family: MuliRegular;
+    font-family: 'Muli-ExtraBold';
     src: url(../assets/fonts/Muli-ExtraBold.woff);
 }
 
 @font-face {
-    font-family: MuliRegular;
+    font-family: 'Muli-Bold';
     src: url(..//assets/fonts/Muli-Bold.woff);
 }
+
+
 
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
@@ -86,12 +88,12 @@ a {
 .menu {
     width: 540px;
     height: 11px;
-    font-family: MuliRegular;
+    font-family: 'Muli-Regular';
 }
 
 .menu__list {
 
-    font-family: MuliRegular;
+    font-family: 'Muli-Regular';
     list-style-type: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -115,7 +117,7 @@ a {
     border-radius: 35px;
     background-color: #0aa566;
     border: 0;
-    font-family: "Muli-Extra Bold";
+    font-family: "Muli-ExtraBold";
     font-size: 24px;
     color: #ffffff;
 
@@ -123,9 +125,96 @@ a {
 
 /* Smoothies */
 
+.title {
+    width: 637px;
+    height: 38px;
+    /* Style for "What are t" */
+    width: 637px;
+    height: 38px;
+    color: #f7ae3b;
+    font-family: 'Muli-ExtraBold';
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 40px;
+    text-align: center;
+    /* Text style for "W, hat are" */
+    font-style: normal;
+    letter-spacing: -1px;
+    line-height: normal;
+    margin: 98px 642px 55px 642px;
+}
+
+.text {
+    width: 915px;
+    height: 122px;
+    color: #1e1e1e;
+    font-family: 'Muli-Regular';
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 55px 503px 60px 503px;
+}
+
+.smoothies__features {
+    width: 1015px;
+    height: 389px;
+    margin-left: 455px;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.smothies__features-text {
+    width: 200px;
+    height: 25px;
+    color: #f2612d;
+    font-family: 'Muli-ExtraBold';
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    line-height: normal;
+}
+
+.smothies__features-icon {
+    width: 74px;
+    height: 70px;
+}
+
+.smoothies__features-content {
+    width: 263px;
+    height: 170px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 /* About */
+.about {
+    background-image: url('../assets/img/about/about-bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
 
+
+}
+
+.about__image {
+    /* Style for "Img" */
+    width: 691px;
+    height: 818px;
+}
 
 /* Products */
 
