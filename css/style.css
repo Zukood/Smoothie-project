@@ -14,6 +14,10 @@
     src: url(..//assets/fonts/Muli-Bold.woff);
 }
 
+@font-face {
+    font-family: 'Muli-LightItalic';
+    src: url(..//assets/fonts/Muli-LightItalic.woff);
+}
 
 
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
@@ -53,10 +57,8 @@ a {
 
 
 .header__personal {
-
     width: 170px;
     height: 35px;
-
 }
 
 .header__personal-list {
@@ -125,10 +127,22 @@ a {
 
 /* Smoothies */
 
+.smoothies {
+    height: 860px;
+}
+
+.smoothies__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-smothies {
+    margin: 98px 0px 55px 0px;
+}
+
 .title {
-    width: 637px;
-    height: 38px;
-    /* Style for "What are t" */
     width: 637px;
     height: 38px;
     color: #f7ae3b;
@@ -136,14 +150,9 @@ a {
     font-size: 50px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
     line-height: 40px;
     text-align: center;
-    /* Text style for "W, hat are" */
-    font-style: normal;
     letter-spacing: -1px;
-    line-height: normal;
-    margin: 98px 642px 55px 642px;
 }
 
 .text {
@@ -155,7 +164,11 @@ a {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    margin: 55px 503px 60px 503px;
+    /* margin: auto 503px 60px 503px; */
+}
+
+.text-smoothies {
+    margin-bottom: 60px;
 }
 
 .smoothies__features {
@@ -163,7 +176,8 @@ a {
     height: 389px;
     margin-left: 455px;
     display: flex;
-    flex-flow: column wrap;
+    justify-content: center;
+    flex-flow: wrap;
 
 }
 
@@ -174,12 +188,8 @@ a {
     font-family: 'Muli-ExtraBold';
     font-size: 25px;
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
     line-height: 40px;
     text-align: center;
-    letter-spacing: -0.5px;
-    line-height: normal;
 }
 
 .smothies__features-icon {
@@ -188,7 +198,7 @@ a {
 }
 
 .smoothies__features-content {
-    width: 263px;
+    width: 250px;
     height: 170px;
     padding: auto;
     display: flex;
@@ -197,36 +207,303 @@ a {
 }
 
 
-
 /* About */
 .about {
     background-image: url('../assets/img/about/about-bg.png');
     background-size: cover;
-    width: 100%;
-    height: 100vh;
+    height: 800px;
     display: flex;
     justify-content: space-around;
-
+    position: relative;
+    z-index: 1;
 
 }
 
 .about__image {
-    /* Style for "Img" */
     width: 691px;
     height: 818px;
+    margin-top: 50px;
+}
+
+.about__box {
+    width: 590px;
+    height: 610px;
+    margin-top: 97px;
+}
+
+.about__text {
+    width: 588px;
+    height: 102px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 50px;
+}
+
+.title--green {
+    color: #cae941;
+}
+
+.about__smoothie-list {
+    list-style-type: none;
+    font-family: 'Muli-LightItalic';
+    width: 408px;
+    height: 329px;
+    font-size: 21px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 50px;
+    margin-top: 60px;
+
+}
+
+.about__smoothie-item {
+    line-height: 40px;
+}
+
+.text--bold {
+    font-family: 'Muli-ExtraBold';
+}
+
+.about__smoothie-item {
+    width: 420px;
+}
+
+.btn--transparend {
+    width: 380px;
+    height: 60px;
+    border-radius: 35px;
+    border-color: #f8b231;
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    font-family: 'Muli-ExtraBold';
+    color: #ffffff;
+    font-size: 21px;
+
 }
 
 /* Products */
+.product {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
 
+.product__item {
+    width: 477px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__img {
+    width: 119px;
+    height: 303px;
+}
+
+.product__item--dark-chocolate {
+    background-color: #612917;
+
+}
+
+.product__item--vegan {
+    background-color: #1a8472;
+    bord
+}
+
+.product__item--lemon {
+    background-color: #f8ac3a;
+}
+
+.product__item--turmeric {
+    background-color: #c34b1e;
+}
+
+.product__title {
+    font-family: 'Muli-Bold';
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.product__size {
+    font-size: 21px;
+    font-family: 'Muli-LightItalic';
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.btn--tr-white {
+    width: 205px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 35px;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    font-family: 'Muli-ExtraBold';
+    font-size: 21px;
+    color: #ffffff;
+
+
+}
 
 /* Story */
+.story {
+    height: 870px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 250px;
+}
 
+.story__image {
+    width: 585px;
+    height: 600px;
+    margin-top: 115px;
+    margin-right: 260px;
+
+}
+
+.story__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story__text {
+    width: 515px;
+    height: 130px;
+    text-align: left;
+    line-height: 35px;
+    margin-bottom: 50px;
+
+}
+
+.story__title {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.btn--green-bg {
+    width: 380px;
+    height: 60px;
+    border-radius: 35px;
+    border-color: #f8b231;
+    background-color: #0aa566;
+    font-family: 'Muli-ExtraBold';
+    color: #ffffff;
+    font-size: 21px;
+}
 
 /* Testimonials */
+.testimonials {
+    background-color: #662b1f;
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
+}
+
+.title--orange {
+    font-family: 'Muli-ExtraBold';
+    color: #f2612d;
+}
+
+.testimonials__title {
+    margin-top: 50px;
+}
+
+.testimonials__text {
+    font-family: 'Muli-Regular';
+    width: 455px;
+    height: 130px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 59px;
+
+}
+
+.testimonials__from {
+    font-family: 'Muli-LightItalic';
+    color: #f7ae3b;
+    width: 450px;
+    margin-left: 18px;
+}
+
+.testimonials__main {
+    width: 800px;
+    height: 250px;
+    display: flex;
+
+}
+
+.testimoials__text-img {
+    width: 220px;
+    height: 220px;
+    margin-left: 100px;
+}
+
+.testimonials__arrows {
+    width: 158px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__btn {
+
+    width: 30px;
+    height: 16px;
+    background-color: transparent;
+    border: 0;
+
+}
 
 /* Blog */
+.blog {
+    height: 860px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.blog__img {
+    width: 555px;
+    height: 400px;
+}
+
+.blog__subtitle {
+
+    color: #f2612d;
+    font-family: 'Muli-ExtraBold';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.blog__date {
+    font-family: 'Muli-Regular';
+    margin-bottom: 20px;
+}
+
+.blog__text {
+    width: 472px;
+    height: 122px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.blog__post {
+    margin-top: 70px;
+}
+
+.block__link {}
 
 /* Instagram */
 
