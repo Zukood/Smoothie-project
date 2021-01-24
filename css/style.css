@@ -59,21 +59,24 @@ a {
 }
 
 
-
 .header__personal {
     width: 170px;
     height: 35px;
 }
 
 .header__personal-list {
+    border: 1px solid;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    margin-left: 50px;
 }
 
 .header__personal-count {
-    width: 20px;
-    height: 20px;
+
+    display: inline-block;
+    width: 17px;
+    height: 17px;
     color: black;
     border-radius: 50%;
     background: #ffffff;
@@ -81,6 +84,7 @@ a {
 }
 
 .header__social {
+    border: 1px solid;
     width: 160px;
     height: 35px;
 
@@ -89,7 +93,8 @@ a {
 .header__social-list {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 10px;
 }
 
 .menu {
@@ -118,7 +123,7 @@ a {
     justify-content: center;
 }
 
-.btn {
+.btn-header {
     width: 280px;
     height: 70px;
     border-radius: 35px;
@@ -254,7 +259,7 @@ a {
     background-size: cover;
     height: 800px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
     z-index: 1;
 
@@ -264,17 +269,19 @@ a {
     width: 691px;
     height: 818px;
     margin-top: 50px;
+    margin-left: -203px;
 }
 
 .about__box {
-    width: 590px;
-    height: 610px;
-    margin-top: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 130px;
+
 }
 
 .about__text {
-    width: 588px;
-    height: 102px;
+    max-width: 588px;
     color: #ffffff;
     text-align: left;
     line-height: 50px;
@@ -285,16 +292,12 @@ a {
 }
 
 .about__smoothie-list {
-    list-style-type: none;
     font-family: 'Muli-LightItalic';
     width: 408px;
-    height: 329px;
     font-size: 21px;
-    text-align: left;
     color: #ffffff;
-    margin-bottom: 50px;
-    margin-top: 60px;
-
+    padding: 60px 0px 50px 30px;
+    list-style-image: url(../assets/img/about/1.png)
 }
 
 .about__smoothie-item {
@@ -327,7 +330,7 @@ a {
 .product {
     position: relative;
     display: flex;
-    justify-content: space-between;
+
 }
 
 .product__item {
@@ -337,6 +340,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: 25%;
 }
 
 .product__img {
