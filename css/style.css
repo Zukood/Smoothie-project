@@ -51,6 +51,10 @@ a {
 
 }
 
+.header__right {
+    display: flex;
+}
+
 .header__top {
     display: flex;
     justify-content: space-between;
@@ -58,37 +62,43 @@ a {
     padding: 70px 100px;
 }
 
+.logo__link-image {
+    margin-right: 50px;
+}
 
 .header__personal {
-    width: 170px;
-    height: 35px;
+
+    margin-right: 130px;
+    display: flex;
 }
 
 .header__personal-list {
-    border: 1px solid;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    margin-left: 50px;
+    align-items: center;
+    position: relative;
+
 }
 
 .header__personal-count {
 
     display: inline-block;
+    text-align: center;
+    padding-top: 2px;
     width: 17px;
     height: 17px;
     color: black;
     border-radius: 50%;
     background: #ffffff;
-
+    position: absolute;
+    bottom: 25px;
+    font-family: 'Muli-Regular';
+    font-size: 11px;
+    font-weight: 400;
 }
 
-.header__social {
-    border: 1px solid;
-    width: 160px;
-    height: 35px;
-
-}
+.header__social {}
 
 .header__social-list {
     list-style-type: none;
@@ -103,6 +113,14 @@ a {
     font-family: 'Muli-Regular';
 }
 
+.header__personal-icon {
+    margin: 0px 0px 0px 45px;
+}
+
+.header__social-icon {
+    margin: 0px 0px 0px 10px;
+}
+
 .menu__list {
 
     font-family: 'Muli-Regular';
@@ -112,6 +130,7 @@ a {
     display: flex;
     justify-content: space-between;
     letter-spacing: 0.32px;
+
 }
 
 .menu__list-link {
@@ -129,10 +148,10 @@ a {
     border-radius: 35px;
     background-color: #0aa566;
     border: 0;
-    font-family: "Muli-ExtraBold";
+    font-family: 'Muli-Regular';
     font-size: 24px;
     color: #ffffff;
-
+    padding-right: 70px;
 }
 
 /* Smoothies */
@@ -323,6 +342,7 @@ a {
     font-family: 'Muli-ExtraBold';
     color: #ffffff;
     font-size: 21px;
+    padding-right: 65px;
 
 }
 
@@ -392,6 +412,7 @@ a {
     font-family: 'Muli-ExtraBold';
     font-size: 21px;
     color: #ffffff;
+    padding-right: 85px;
 
 
 }
@@ -419,8 +440,8 @@ a {
 }
 
 .story__text {
-    width: 515px;
-    height: 130px;
+    max-width: 515px;
+
     text-align: left;
     line-height: 35px;
     margin-bottom: 50px;
@@ -436,11 +457,13 @@ a {
     width: 380px;
     height: 60px;
     border-radius: 35px;
-    border-color: #f8b231;
     background-color: #0aa566;
     font-family: 'Muli-ExtraBold';
     color: #ffffff;
     font-size: 21px;
+    border: 0;
+    padding-right: 151px;
+
 }
 
 /* Testimonials */
@@ -550,7 +573,8 @@ a {
 }
 
 .blog__post {
-    margin-top: 70px;
+    margin-top: 128px;
+    margin-left: 60px;
 }
 
 
