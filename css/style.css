@@ -160,6 +160,10 @@ a {
     justify-content: center;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 .btn-header {
     width: 280px;
     height: 70px;
@@ -192,6 +196,7 @@ a {
 
 .btn-header:hover {
     background-color: #097a4d;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
 
 .btn-header:hover::after {
@@ -386,8 +391,7 @@ a {
 }
 
 .btn--transparend:hover {
-    border-color: #f7aa1b;
-    border-width: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn--transparend:hover::after {
@@ -485,8 +489,11 @@ a {
 }
 
 .btn--tr-white:hover {
-    border-width: 5px;
-    border-color: #e2dfdf;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+.btn--tr-white:hover::after {
+    right: 25px;
 }
 
 /* Story */
@@ -670,6 +677,7 @@ a {
 .blog__img {
     width: 555px;
     height: 400px;
+    display: block;
 }
 
 
