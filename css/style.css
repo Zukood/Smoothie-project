@@ -47,11 +47,15 @@ a {
 }
 
 
+.btn {
+    cursor: pointer;
+}
+
 /* Header */
 .header {
     background-image: url('../assets/img/header-bg-img.jpg');
     background-size: cover;
-    width: 100%;
+    background-position: center;
     height: 100vh;
 
 }
@@ -148,11 +152,32 @@ a {
     display: flex;
     justify-content: space-between;
     letter-spacing: 0.32px;
+}
 
+.menu__list-item {
+    padding-right: 10px;
+}
+
+.menu__btn {
+    display: none;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.menu__btn-img {
+    width: 100%;
 }
 
 .menu__list-link {
     color: #ffffff;
+}
+
+.menu__list-link:hover {
+    border-bottom: 2px solid #ffffff;
+
+
 }
 
 .header__content {
@@ -160,9 +185,6 @@ a {
     justify-content: center;
 }
 
-.btn {
-    cursor: pointer;
-}
 
 .btn-header {
     width: 280px;
@@ -197,6 +219,8 @@ a {
 .btn-header:hover {
     background-color: #097a4d;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+
+
 }
 
 .btn-header:hover::after {
@@ -380,7 +404,7 @@ a {
     height: 60px;
     border-radius: 35px;
     border-color: #f8b231;
-    border-width: 2px;
+    /* border-width: 5px; */
     border-style: solid;
     background-color: transparent;
     font-family: 'Muli-ExtraBold';
@@ -392,6 +416,9 @@ a {
 
 .btn--transparend:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+
 }
 
 .btn--transparend:hover::after {
@@ -918,3 +945,70 @@ input {
 
 
 /* Здесь будут медиа запросы */
+
+@media (max-width: 1600px) {
+
+    .menu__list {}
+
+    .header__top {
+        justify-content: space-around;
+    }
+
+    .menu__btn {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .menu__list-item {
+        padding-bottom: 20px;
+    }
+
+    .header__right {
+        display: none;
+    }
+
+    @media (max-width: 1100px) {
+        .menu {
+            display: none;
+        }
+
+        .menu__btn {
+            display: block;
+
+        }
+
+        .header__right {
+            display: none;
+        }
+
+        .header__top {
+            justify-content: center;
+        }
+
+        .header__content {}
+
+        .btn-header {}
+    }
+
+    @media (max-width: 768px) {
+        .menu__btn {
+            display: block;
+        }
+
+        .header__top {
+            background-color: #0aa566;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
