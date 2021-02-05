@@ -58,6 +58,7 @@ a {
     background-position: center;
     height: 100vh;
 
+
 }
 
 .header__right {
@@ -65,14 +66,22 @@ a {
 }
 
 .header__top {
+    padding: 70px 100px 70px;
+    position: relative;
+}
+
+.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 100px;
+    width: 100%;
 }
 
-.logo__link-image {
-    margin-right: 50px;
+.header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header__personal {
@@ -131,7 +140,6 @@ a {
 
 .menu {
     width: 540px;
-    height: 11px;
     font-family: 'Muli-Regular';
 }
 
@@ -944,71 +952,66 @@ input {
 }
 
 
-/* Здесь будут медиа запросы */
-
-@media (max-width: 1600px) {
-
-    .menu__list {}
-
-    .header__top {
-        justify-content: space-around;
+/* /* Здесь будут медиа запросы */
+/* @media (max-width: 1500px) {
+    .header__nav {
+        display: none;
     }
 
     .menu__btn {
         display: block;
     }
+}
+ */
 
-    .menu {
+
+
+
+
+@media (max-width: 768px) {
+    .header__nav {
         display: none;
-
+        background-color: #0aa566;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
     }
 
-    .menu__list-item {
-        padding-bottom: 20px;
+    .menu {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        padding-top: 150px;
+        padding-bottom: 85px;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-between;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .menu__btn {
+        display: block;
+        z-index: 1;
     }
 
     .header__right {
-        display: none;
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        padding-right: 80px;
     }
 
-    @media (max-width: 1100px) {
-        .menu {
-            display: none;
-        }
-
-        .menu__btn {
-            display: block;
-
-        }
-
-        .header__right {
-            display: none;
-        }
-
-        .header__top {
-            justify-content: center;
-        }
-
-        .header__content {}
-
-        .btn-header {}
+    .header__top {
+        padding: 90px;
     }
-
-    @media (max-width: 768px) {
-        .menu__btn {
-            display: block;
-        }
-
-        .header__top {
-            background-color: #0aa566;
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-            flex-direction: column-reverse;
-            justify-content: flex-end;
-            align-items: center;
-        }
-    }
+}
