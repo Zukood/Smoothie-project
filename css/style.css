@@ -276,7 +276,7 @@ a {
 }
 
 .text-smoothies {
-    margin-bottom: 60px;
+    margin: 0 20px 60px 20px;
 }
 
 .smoothies__features {
@@ -284,7 +284,7 @@ a {
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    margin: 0px 0px 160px 0px;
+    margin: 0px 0px 105px 0px;
 
 }
 
@@ -385,6 +385,17 @@ a {
 
 .title--green {
     color: #cae941;
+    position: relative;
+}
+
+.title--green::after {
+    content: "";
+    background-image: url(../assets/img/about/Line.png);
+    width: 450px;
+    height: 13px;
+    position: absolute;
+    left: -5px;
+    top: 62px;
 }
 
 .about__smoothie-list {
@@ -952,18 +963,18 @@ input {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.displayBlock {
+    display: flex;
+}
 
 /* /* Здесь будут медиа запросы */
-/* @media (max-width: 1500px) {
-    .header__nav {
-        display: none;
+@media (max-width: 1670px) {
+    .about__image {
+        margin-left: 0px;
     }
 
-    .menu__btn {
-        display: block;
-    }
 }
- */
+
 @media (max-width: 1500px) {
     .header__nav {
         display: none;
@@ -976,6 +987,37 @@ input {
     .header__top {
         padding: 90px;
     }
+
+    .about__box {
+        margin-left: 60px;
+    }
+
+    .about {
+        z-index: 0;
+    }
+}
+
+@media (max-width: 1360px) {
+    .about__image {
+        width: 600px;
+        height: auto;
+    }
+
+    .about {
+        height: auto;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1264px) {
+    .about__image {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -991,6 +1033,10 @@ input {
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    .displayBlock {
+        display: block;
     }
 
     .menu {
@@ -1051,6 +1097,40 @@ input {
     }
 }
 
+@media (max-width: 1023px) {
+    .smoothies__features-content:nth-child(1) {
+        border: 0;
+    }
+
+    .smoothies__features-content:nth-child(2) {
+        border: 0;
+    }
+
+    .smoothies__features-content:nth-child(3) {
+        border: 0;
+    }
+
+    .smoothies__features-content:nth-child(4) {
+        border: 0;
+    }
+
+    .smoothies__features-content:nth-child(5) {
+        border: 0;
+    }
+
+    .smoothies__features-content:nth-child(6) {
+        border: 0;
+    }
+
+    .smoothies__features-content:nth-child(7) {
+        border: 0;
+    }
+
+    .smoothies__features-content:nth-child(8) {
+        border: 0;
+    }
+}
+
 
 @media (max-width: 768px) {
     .header__nav {
@@ -1065,6 +1145,10 @@ input {
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    .displayBlock {
+        display: block;
     }
 
     .menu {
@@ -1116,6 +1200,35 @@ input {
         font-size: 15px;
     }
 
+
+}
+
+@media (max-width: 700px) {
+    .about__image {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title--green::after {
+        display: none;
+    }
+
+    .about__image {
+        width: 380px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .about__smoothie-list {
+        font-size: 17px;
+        width: auto;
+    }
+
+
+
 }
 
 @media (max-width: 375px) {
@@ -1160,6 +1273,34 @@ input {
         height: 65px;
         font-size: 21px;
     }
+
+    .title-smothies {
+        font-size: 45px;
+    }
+
+    .btn--transparend {
+        width: 290px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .about__smoothie-list {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .about__image {
+        width: 295px;
+    }
+
+
+    .about__smoothie-item {
+        width: auto;
+    }
 }
 
 @media (max-width: 360px) {
@@ -1179,5 +1320,14 @@ input {
         left: 78px;
     }
 
+    .title-smothies {
+        font-size: 42px;
+    }
 
 }
+
+/* @media (min-width: 1500px) {
+    .header__nav {
+        display: flex !important;
+    }
+} */
