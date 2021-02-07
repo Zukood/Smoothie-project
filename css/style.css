@@ -968,11 +968,25 @@ input {
 }
 
 /* /* Здесь будут медиа запросы */
+
+@media (max-width: 1918px) {
+    .instagram__gallery {
+        overflow: scroll;
+    }
+}
+
 @media (max-width: 1670px) {
     .about__image {
         margin-left: 0px;
     }
 
+    .story__right::after {
+        display: none;
+    }
+
+    .story__about {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 1500px) {
@@ -990,6 +1004,7 @@ input {
 
     .about__box {
         margin-left: 60px;
+        margin-bottom: 20px;
     }
 
     .about {
@@ -1010,12 +1025,24 @@ input {
     .about {
         flex-wrap: wrap;
     }
+
+    .testimonials::after {
+        display: none;
+    }
 }
 
 @media (max-width: 1264px) {
     .about__image {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .story {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        flex-direction: column-reverse;
+        height: auto;
+
     }
 
 }
@@ -1095,6 +1122,52 @@ input {
         height: 80px;
         font-size: 27px;
     }
+
+    .instagram__gallery {
+        overflow-x: scroll;
+    }
+
+    .blog {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .story__image {
+        margin-right: 0;
+    }
+
+    .footer__top {
+        flex-wrap: wrap;
+    }
+
+    .product {
+        overflow-x: auto;
+    }
+
+    .product__item {
+        flex: 0 0 60%;
+    }
+
+    ..product__title {
+        text-align: center;
+    }
+
+    .footer__follow::before {
+        display: none;
+    }
+
+    .footer__input {
+        width: 350px;
+    }
+
+    .footer-social {
+        margin-left: 38px;
+    }
+
+    .testimonials__title::after {
+        right: -80px;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -1129,6 +1202,9 @@ input {
     .smoothies__features-content:nth-child(8) {
         border: 0;
     }
+
+
+
 }
 
 
@@ -1200,6 +1276,42 @@ input {
         font-size: 15px;
     }
 
+    .story__image {
+        width: 495px;
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .story {
+        margin-left: 165px;
+    }
+
+    .testimonials__main {
+        max-width: 600px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .testimonials__text {
+        max-width: 455px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .testimoials__text-img {
+        width: 155px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .testimonials__from {
+        width: auto;
+        top: 130px;
+    }
+
+    .testimonials__title::after {
+        display: none;
+    }
 
 }
 
