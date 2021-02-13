@@ -755,7 +755,7 @@ a {
 }
 
 .blog__text {
-    width: 472px;
+    max-width: 472px;
     height: 122px;
     text-align: left;
     margin-left: 100px;
@@ -1010,6 +1010,11 @@ input {
     .about {
         z-index: 0;
     }
+
+    .story__image {
+        padding-right: 20px;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 1360px) {
@@ -1029,6 +1034,22 @@ input {
     .testimonials::after {
         display: none;
     }
+
+    .story__image {
+        width: 570px;
+        height: auto;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .story {
+        margin-left: 0;
+    }
+
+    .blog__subtitle::before {
+        display: none;
+    }
+
 }
 
 @media (max-width: 1264px) {
@@ -1042,8 +1063,9 @@ input {
         margin-bottom: 20px;
         flex-direction: column-reverse;
         height: auto;
-
+        align-items: center;
     }
+
 
 }
 
@@ -1139,6 +1161,7 @@ input {
 
     .footer__top {
         flex-wrap: wrap;
+        padding: 15px;
     }
 
     .product {
@@ -1168,6 +1191,7 @@ input {
     .testimonials__title::after {
         right: -80px;
     }
+
 }
 
 @media (max-width: 1023px) {
@@ -1283,7 +1307,7 @@ input {
     }
 
     .story {
-        margin-left: 165px;
+        margin-left: 0;
     }
 
     .testimonials__main {
@@ -1402,7 +1426,7 @@ input {
     }
 
     .title {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .about__image {
@@ -1412,6 +1436,113 @@ input {
 
     .about__smoothie-item {
         width: auto;
+    }
+
+    .story {
+        margin-left: 0;
+        padding: 0px 10px 0px 10px;
+
+    }
+
+    .story__title {
+        margin-bottom: 30px;
+    }
+
+    .btn--green-bg {
+        width: 330px;
+        padding-right: 60px;
+        font-size: 20px;
+    }
+
+    .story__image {
+        max-width: 325px;
+    }
+
+    .blog {
+        padding: 0 10px 0 10px;
+        justify-content: start;
+
+    }
+
+    .blog__img {
+        width: 325px;
+        height: auto;
+    }
+
+    .blog__post {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .blog__subtitle::before {
+        display: none;
+    }
+
+    .blog__text {
+        max-width: 472px;
+        margin-left: 0;
+    }
+
+    .footer__copyright-label {
+        display: none;
+    }
+
+    .footer__bottom {
+        right: 90px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer__top {
+        height: auto;
+    }
+
+    .footer__logo {
+        padding: 20px;
+    }
+
+    .test {
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+    }
+
+    .footer__input {
+        width: 320px;
+    }
+
+    .footer-social {
+        margin-left: 9px;
+        margin-top: 0px;
+        padding: 15px;
+    }
+
+    .footer__copyright-btn {
+        display: none;
+    }
+
+    .footer__payments-list {
+        padding-bottom: 30px;
+    }
+
+    .footer__list {
+        padding-bottom: 30px;
+    }
+
+    .testimonials__main {
+        max-width: 310px;
+    }
+
+    .testimonials__text {
+        margin-bottom: 98px;
+        margin-top: -55px;
+        font-size: 16px;
+    }
+
+    .testimonials__from {
+        top: 107px;
+        right: 75px;
     }
 }
 
