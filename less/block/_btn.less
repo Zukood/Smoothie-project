@@ -1,0 +1,46 @@
+// main: ./../main.less
+
+.btn {
+    cursor: pointer;
+}
+
+.btn-header {
+    width: 280px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #0aa566;
+    border: 0;
+    font-family: 'Muli-Regular';
+    font-size: 24px;
+    color: #ffffff;
+    padding-right: 70px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-header::after {
+    content: "";
+    height: 16px;
+    width: 30px;
+    background-image: url(../assets/img/header/arrow-btn.png);
+    position: absolute;
+    right: 35px;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+
+}
+
+
+.btn-header:hover {
+    background-color: #097a4d;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+
+
+}
+
+.btn-header:hover::after {
+    right: 30px;
+}

@@ -1,4 +1,6 @@
-/* Здесь подключаем шрифты, используя правило @font-face*/
+// out: ../css/main-min.css, compress: true, sourceMap: false
+
+
 @font-face {
     font-family: 'Muli-Regular';
     src: url(../assets/fonts/Muli-Regular.woff);
@@ -29,7 +31,6 @@
     src: url(../assets/fonts/Muli-SemiBoldItalic.woff);
 }
 
-/*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
 
 
@@ -46,195 +47,18 @@ a {
     text-decoration: none;
 }
 
-
-.btn {
-    cursor: pointer;
-}
-
 /* Header */
-.header {
-    background-image: url('../assets/img/header-bg-img.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+@import "./block/_btn.less";
+@import "./block/_header.less";
+@import "./block/_menu.less";
 
 
-}
-
-.header__right {
-    display: flex;
-}
-
-.header__top {
-    padding: 70px 100px 70px;
-    position: relative;
-}
-
-.header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-}
-
-.header__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.header__personal {
-    margin-right: 130px;
-    display: flex;
-    position: relative;
-}
-
-.header__personal-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__personal::after {
-    content: "";
-    display: inline-block;
-    width: 47px;
-    height: 2px;
-    background-color: #ffd68f;
-    position: absolute;
-    right: -109px;
-    top: 50%;
-}
-
-.header__personal-link:last-child {
-    position: relative;
-}
-
-.header__personal-count {
-
-    display: inline-block;
-    text-align: center;
-    padding-top: 2px;
-    width: 17px;
-    height: 17px;
-    color: black;
-    border-radius: 50%;
-    background: #ffffff;
-    position: absolute;
-    bottom: 20px;
-    left: 65px;
-    font-family: 'Muli-Regular';
-    font-size: 11px;
-    font-weight: 400;
-}
 
 
-.header__social-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    padding-left: 10px;
-}
-
-.menu {
-    width: 540px;
-    font-family: 'Muli-Regular';
-}
-
-.header__personal-icon {
-    margin: 0px 0px 0px 45px;
-}
-
-.header__social-icon {
-    margin: 0px 0px 0px 10px;
-}
-
-.menu__list {
-
-    font-family: 'Muli-Regular';
-    list-style-type: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 0.32px;
-}
-
-.menu__list-item {
-    padding-right: 10px;
-}
-
-.menu__btn {
-    display: none;
-    position: fixed;
-    right: 30px;
-    top: 30px;
-    cursor: pointer;
-}
-
-.menu__btn-img {
-    width: 100%;
-}
-
-.menu__list-link {
-    color: #ffffff;
-}
-
-.menu__list-link:hover {
-    border-bottom: 2px solid #ffffff;
 
 
-}
-
-.header__content {
-    display: flex;
-    justify-content: center;
-}
 
 
-.btn-header {
-    width: 280px;
-    height: 70px;
-    border-radius: 35px;
-    background-color: #0aa566;
-    border: 0;
-    font-family: 'Muli-Regular';
-    font-size: 24px;
-    color: #ffffff;
-    padding-right: 70px;
-    position: relative;
-    cursor: pointer;
-}
-
-.btn-header::after {
-    content: "";
-    height: 16px;
-    width: 30px;
-    background-image: url(../assets/img/header/arrow-btn.png);
-    position: absolute;
-    right: 35px;
-    transform: translateY(50%);
-    -webkit-transform: translateY(50%);
-    -moz-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    -o-transform: translateY(50%);
-
-}
-
-
-.btn-header:hover {
-    background-color: #097a4d;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-
-
-}
-
-.btn-header:hover::after {
-    right: 30px;
-}
 
 /* Smoothies */
 
@@ -1172,7 +996,7 @@ input {
         flex: 0 0 60%;
     }
 
-    ..product__title {
+    .product__title {
         text-align: center;
     }
 
@@ -1569,8 +1393,8 @@ input {
 
 }
 
-/* @media (min-width: 1500px) {
-    .header__nav {
-        display: flex !important;
-    }
-} */
+// /* @media (min-width: 1500px) {
+//     .header__nav {
+//         display: flex !important;
+//     }
+// } */
